@@ -10,11 +10,9 @@ import weaver._
 
 import java.time.Duration
 import java.util.{Collections, Properties}
-import scala.concurrent.duration.DurationInt
-import scala.jdk.CollectionConverters._
 
-object UpsertKafkaConsumerTest$ extends MutableIOSuite {
-  val logger = LoggerFactory.getLogger(classOf[UpsertKafkaConsumerTest$.type])
+object UpsertKafkaConsumerTest extends MutableIOSuite {
+  val logger = LoggerFactory.getLogger(classOf[UpsertKafkaConsumerTest.type])
 
   override type Res = EmbeddedK
 

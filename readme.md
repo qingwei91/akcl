@@ -13,3 +13,11 @@ On 1st poll, it will try to read everything from the assigned partitions and per
 This pattern is quite common on compacted topics where you only care about the latest value per key in your topic.
 
 It also handles partition rebalancing out of the box to maintain correctness.
+
+It has the same interface as regular consumer, you can use it as a drop in replacement.
+```scala
+import akcl.UpsertKafkaConsumer
+
+val upsertConsumer = new UpsertKafkaConsumer(props)
+
+```
