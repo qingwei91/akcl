@@ -2,7 +2,7 @@
 
 This repo contains some helpers for Kafka Consumer.
 
-Right now it only contains 1 additional feature:
+Right now it only contains 1 additional feature, given it is a tiny helper, I am not publishing it, if you want to use it you can just copy the code needed.
 
 ## UpsertKafkaConsumer
 
@@ -15,6 +15,7 @@ This pattern is quite common on compacted topics where you only care about the l
 It also handles partition rebalancing out of the box to maintain correctness.
 
 It has the same interface as regular consumer, you can use it as a drop in replacement.
+
 ```scala
 import akcl.UpsertKafkaConsumer
 
